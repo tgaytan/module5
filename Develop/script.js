@@ -2,6 +2,22 @@
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
 $(function () {
+
+// let now = dayjs('2023-09-09').format('dddd');
+// let now = dayjs();
+// console.log(now);
+
+let year = dayjs().year();
+let month = dayjs().month() + 1;
+let date = dayjs().date();
+
+  let currentDay = dayjs(year + "-" + month + "-" + date).format('dddd, MMMM DD');
+  console.log(currentDay);
+
+  let currentDayEl = $('#currentDay');
+  currentDayEl.text(currentDay);
+
+
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -21,3 +37,6 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
+
