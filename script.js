@@ -2,7 +2,7 @@
 const year = dayjs().year();
 const month = dayjs().month() + 1;
 const date = dayjs().date();
-const hour = 9 // dayjs().hour();
+const hour = dayjs().hour();
 const currentDay = dayjs(year + "-" + month + "-" + date).format('dddd, MMMM DD'); //displays today's date in format like "Saturday, September 09"
 
 //creating variables that control the start hour and end hour of the day
@@ -15,6 +15,7 @@ $(function () {
   $('button').on('click', function(event) {
 
     // this code checks if the user clicked on the big button or the small save icon and updates the variable "theEvent" so that way it is always the button element
+    let theEvent;
     if ($(event.target)[0].tagName === 'I') {
       theEvent = $(event.target).parent();
     } else if ($(event.target)[0].tagName === 'BUTTON') {
