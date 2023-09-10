@@ -16,9 +16,9 @@ Open a browser and navigate to "https://tgaytan.github.io/work-day-scheduler/". 
 
 The current date will be displayed at the top of the page and there are rows representing the hours of the day.  The color of the row indicates if the hour is past, present, or future.
 
-past = gray
-present = red
-future = green
+past = gray <br>
+present = red <br>
+future = green <br>
 
 To save events, type in the text field and then hit the save button.  The data is saved to the local storage so the note will still be displayed if the page is refreshed.
 
