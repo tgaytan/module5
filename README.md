@@ -2,12 +2,7 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This is a work day scheduler that you can use to schedule events by the hour for the current day.  This app was created to practice jQuery and use it to modify html and css based off the hour of current day.  Local storage is also utilized to save the user data and can render this data on the page if it is refreshed.
 
 ## Installation
 
@@ -29,7 +24,7 @@ To save events, type in the text field and then hit the save button.  The data i
 
 ## Credits
 
-The starter code was provided by The University of Texas at Austin online coding boot camp.  Day.js was used to get the current time.  The starter code can be found in the 
+The starter code was provided by The University of Texas at Austin online coding boot camp.  Day.js was used to get the current time.  The starter code can be found in the "starterCode" directory.
 
 ## License
 
@@ -37,4 +32,4 @@ N/A
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+To test that the block colors change depending on the hour, you can modify line 5 in the ./assets/js/script.js file.  Comment out "dayjs().hour();" and then set the hour variable to the hour you want to simulate.  Use 24 hour time.
